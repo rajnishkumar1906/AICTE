@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/profile"
+        app:showAsAction="never"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24"
+        />
+    <item
+        android:id="@+id/bureau"
+        app:showAsAction="never"
+        android:title="Bureau"
+        android:icon="@drawable/bureau_icon"/>
+    <item
+        android:id="@+id/courses"
+        app:showAsAction="never"
+        android:title="Courses"
+        android:icon="@drawable/internship"
+        />
+    <item
+        android:id="@+id/logout"
+        android:title="Sign Out"
+        app:showAsAction="never"
+        android:icon="@drawable/baseline_logout_24"/>
+</menu>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AICTE</string>
+    <string name="aicte">All India Council for Technical Education (AICTE) was set up in November
+        1945 as a national-level Apex Advisory Body to conduct a survey on the facilities available
+        for technical education and to promote development in the country in a coordinated and
+        integrated manner.</string>
+    <string name="announce1">Special Cell for Research and Coordination with State Govt. or UTs.
+        and others coordinates and integrates development of technical education.</string>
+
+    <string name="announce2">Invitation for Expression of Interest – writing original Technical
+        Text Books in 22 Indian Languages and English as well as Translation in 22 Indian Language</string>
+
+    <string name="announce3">Exercise of Option for Prornotion under CAS as per AICTE Gazette Notiflcation
+        datcd 05.03.2010 or 0l .03.2019 and Extension of Deadline to Acquire Mandatory Requirements for CAS
+        Promotion till 3lst December 2024</string>
+</resources>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:contentDescription="Back"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/baseline_person_24"
+            android:contentDescription="Profile Picture"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+            android:padding="4dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/username"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:text=" "
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="#042C66"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:text=" "
+            android:inputType="textEmailAddress"
+            android:layout_margin="10dp"
+            android:textColor="#042C66"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@android:color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:outlineSpotShadowColor="@color/apptheme">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:text="Password : "
+                        android:textColor="@color/apptheme"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/password"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:text="Mobile No. : "
+                        android:textColor="@color/apptheme"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/mobile"
+                        android:text="XXXXXXXXXX"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:text="Age  : "
+                        android:textColor="@color/apptheme"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/age"
+                        android:text="21"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:text="Gender  : "
+                        android:textColor="@color/apptheme"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/gender"
+                        android:text="Male"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:text="Postal Code  : "
+                        android:textColor="@color/apptheme"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/postalCode"
+                        android:text="XXXXXX"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:text="State  : "
+                        android:textColor="@color/apptheme"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/state"
+                        android:text=" "
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/editProfile"
+            android:text="Edit Profile"
+            android:backgroundTint="#042C66"
+            android:layout_width="200dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <ImageButton
+            android:id="@+id/back"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_width="20dp"
+            android:background="@android:color/transparent"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/logo1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/fullname"
+            android:hint="Enter your full name"
+            android:textAlignment="center"
+            android:background="@drawable/border"
+            android:layout_width="350dp"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"
+            android:layout_height="50dp"/>
+        <EditText
+            android:id="@+id/email"
+            android:textAlignment="center"
+            android:hint="Enter your email address"
+            android:background="@drawable/border"
+            android:layout_width="350dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/cnfrmpwd"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/signUp"
+            android:text="SignUp"
+            android:textStyle="italic"
+            android:backgroundTint="#042C66"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Already have an account "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/login"
+                android:textColor="#042C66"
+                android:clickable="true"
+                android:text="Login"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

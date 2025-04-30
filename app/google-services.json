@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "221779659519",
+    "project_id": "aicte-d856b",
+    "storage_bucket": "aicte-d856b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221779659519:android:626d161ac0da5a1617daca",
+        "android_client_info": {
+          "package_name": "com.example.aicte"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp0EdlXJnH1Zjuh1JdYJYlIWyXwFKB-sY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

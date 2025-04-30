@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bureau"
+    android:paddingTop="14dp"
+    android:paddingStart="6dp"
+    android:paddingEnd="6dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/logo"
+            android:contentDescription="AICTE Logo"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="अखिल भारतीय तकनीकी शिक्षा परिषद "/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="All India Council for Technical Education"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Back Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Back Button"
+            android:src="@drawable/baseline_arrow_back_24"/>
+    </LinearLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Bureau Image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/bureau"
+                android:contentDescription="Bureau Image"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bureau"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:textColor="#042C66"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="5dp"
+                android:background="#042C66"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:background="@drawable/bureau2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:background="@drawable/gradient_background"
+                        android:padding="10dp"
+                        android:text="POLICY AND ACADEMIC PLANNING"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:textSize="15sp"
+                        android:padding="10dp"
+                        android:textStyle="italic"
+                        android:text="Dr. Amit Dutta \n Director"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/apptheme"
+                        android:layout_width="100dp"
+                        android:layout_height="3dp"/>
+                    <TextView
+                        android:padding="8dp"
+                        android:textSize="15sp"
+                        android:text="The Approvals Bureau processes proposals for grant of approval for establishing a new technical institution or an integrated campus."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:background="@drawable/bureau1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:background="@drawable/gradient_background"
+                        android:padding="10dp"
+                        android:text="Regulations"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:textSize="15sp"
+                        android:padding="10dp"
+                        android:textStyle="italic"
+                        android:text="Dr. More Ramulu \n Adviser-I"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/apptheme"
+                        android:layout_width="100dp"
+                        android:layout_height="3dp"/>
+                    <TextView
+                        android:padding="8dp"
+                        android:textSize="15sp"
+                        android:text="Special Cell for Research and Coordination with State Govt./UTs. and others coordinates and integrates development of technical education."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
